@@ -141,9 +141,6 @@
                          "schema": {
                          "type": "string"
                         }
-
-                        "required": true
-
                     }
                 ],
                 "responses": {
@@ -176,7 +173,6 @@
                          "schema": {
                          "type": "string"
                          }
-                        "required": true
                     }
                 ],
                 "responses": {
@@ -280,7 +276,6 @@
                          "schema": {
                          "type": "string"
                         }
-                        "required": true
                     }
                 ],
                 "responses": {
@@ -313,7 +308,6 @@
                          "schema": {
                          "type": "string"
                          }
-                        "required": true
                     }
                 ],
                 "security": [{"bearerAuth":[]}],
@@ -377,7 +371,6 @@
                          "schema": {
                          "type": "string"
                       }
-                        "required": true
                     }
                 ],
                 "security": [{"bearerAuth":[]}],
