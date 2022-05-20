@@ -72,10 +72,10 @@ router.put('/:projectCode', async (req, res) => {
             }, {new: true})
 
         project.tasks = []
-        await Task.remove({ project: project._id })
+        await Task.remove({ project: project.projectCode })
 
         await Promise.all(tasks.map(async task => {
-            const projectTask = new Task({ ...task, project: project._id})
+            const projectTask = new Task({ ...task, project: project.projectCode})
             await projectTask.save()
             project.tasks.push(projectTask)
         }))
@@ -88,7 +88,6 @@ router.put('/:projectCode', async (req, res) => {
                 project
             }
         )
-
     }catch (err){
         console.log(err)
         return res.status(400).send({ error: 'Error updating project'})
@@ -99,7 +98,7 @@ router.put('/:projectCode', async (req, res) => {
 router.delete('/:projectcode', async (req, res) => {
     try{
         await Project.deleteMany({code: req.params.projectcode})
-        return res.status(200).send({message:'Project removed successful'})
+        return res.status(204).send({message:'Project removed successful'})
     }catch (err){
         return res.status(400).send({ error: 'Error removing project'})
     }

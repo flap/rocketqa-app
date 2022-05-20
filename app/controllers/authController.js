@@ -69,12 +69,13 @@ router.get('/users/:usercpf', async (req, res) => {
     try{
         const user = await User.find({cpf: req.params.usercpf})
         return res.status(200).send(
-            { 
-                message:'User Showed',
+            {
+                message: 'User Showed',
                 user
-        })
+            })
     }catch (err){
-        return res.status(400).send({ error: 'Error loading user'})
+        console.log(err)
+        return res.status(400).send( {error: 'Error loading user'})
     }
 })
 
@@ -82,7 +83,7 @@ router.get('/users/:usercpf', async (req, res) => {
     try{
         
         await User.deleteMany({ cpf: req.params.usercpf })
-        return res.status(200).send({message:'User removed successful'})
+        return res.status(204).send({message:'User removed successful'})
     }catch (err){
         return res.status(400).send({ error: 'Error removing user'})
     }
