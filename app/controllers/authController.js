@@ -67,7 +67,7 @@ router.get('/users', async (req, res) => {
 
 router.get('/users/:usercpf', async (req, res) => {
     try{
-        const user = await User.find({ cpf: req.params.usercpf })
+        const user = await User.find({cpf: req.params.usercpf})
         return res.status(200).send(
             {
                 message: 'User Showed',

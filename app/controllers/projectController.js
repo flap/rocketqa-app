@@ -64,10 +64,12 @@ router.put('/:projectCode', async (req, res) => {
     try{
         const { title, description, tasks } = req.body
 
-        const project = await Project.updateMany({code: req.params.projectCode }, { 
-            title, 
-            description 
-        }, { new: true })
+        const project = await Project.findOneAndUpdate(
+            {
+                code: req.params.projectCode, 
+                title, 
+                description 
+            }, {new: true})
 
         project.tasks = []
         await Task.remove({ project: project.projectCode })
@@ -77,6 +79,8 @@ router.put('/:projectCode', async (req, res) => {
             await projectTask.save()
             project.tasks.push(projectTask)
         }))
+
+        await project.save()
 
         return res.status(200).send(
             {

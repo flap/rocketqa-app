@@ -137,7 +137,13 @@
                         "name": "cpf",
                         "in": "path",
                         "description": "User CPF",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                        }
+
                         "required": true
+
                     }
                 ],
                 "responses": {
@@ -166,6 +172,10 @@
                         "name": "cpf",
                         "in": "path",
                         "description": "User CPF",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                         }
                         "required": true
                     }
                 ],
@@ -266,6 +276,10 @@
                         "name": "code",
                         "in": "path",
                         "description": "Project Code",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                        }
                         "required": true
                     }
                 ],
@@ -295,6 +309,10 @@
                         "name": "code",
                         "in": "path",
                         "description": "Project Code",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                         }
                         "required": true
                     }
                 ],
@@ -355,6 +373,10 @@
                         "name": "code",
                         "in": "path",
                         "description": "Project Code",
+                        "required": true,
+                         "schema": {
+                         "type": "string"
+                      }
                         "required": true
                     }
                 ],
