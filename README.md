@@ -17,6 +17,7 @@ and then do the standard Windows install: next, next, finish.
 With Mongo installed, open your terminal and type **mongod** to run your Mongo server.
 
 ![prompt comand MongoDB](./images/2.png)
+#
 
 ## Node
         Download in: https://nodejs.org/en/download/
@@ -75,7 +76,7 @@ And to check the npm version, run this command:
 If the Node.js version and npm are correctly installed, you’ll see the version name in the CMD prompt.
 
 ***For Mac and Linux installation visit:* https://kinsta.com/blog/how-to-install-node-js/**
-
+#
 
 ## Running Application
 With our database and Node installed and configured, now let's install the necessary packages and run the application. In your IDE's terminal, run the script below:
