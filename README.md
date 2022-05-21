@@ -95,3 +95,7 @@ With our database and Node installed and configured, now let's install the neces
 This is the image you should see in your IDE's terminal:
 
 ![Server Running](./images/10.png)
+
+And in browser:
+
+![Swagger API](./images/11.png)
