@@ -6,7 +6,7 @@ This application has to objective to teach about API Test Automation using the R
 ## Download MongoDB Community Server
 To run the application, you need install Mongo DB (case you don’t installed).
 
-Download in: https://www.mongodb.com/try/download/community 
+         Download in: https://www.mongodb.com/try/download/community 
 
 On the page, choose your OS and download (as in the image)
 
