@@ -1,12 +1,12 @@
 # Rocket🚀QA API
 
-This application has to objective to teach about API Test Automation using the Robot Framework. Using Node.js and Mongo DB, were development a two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
+This application has to objective to teach about API Test Automation using the Robot Framework during a Masterclass at Sensedia Academy. Using Node.js and Mongo DB, were development a two APIs where the first create and authenticate a user through of a token. The second API performs a CRUD of a Project.
 #
 
 ## Download MongoDB Community Server
 To run the application, you need install Mongo DB (case you don’t installed).
 
-Download in: https://www.mongodb.com/try/download/community 
+         Download in: https://www.mongodb.com/try/download/community 
 
 On the page, choose your OS and download (as in the image)
 
