@@ -3,7 +3,7 @@ const mongoose = require ('../../database')
 
 const ProjectSchema = new mongoose.Schema({
     code: {
-        type: String,
+        type: Number,
         unique: true,
         require: true
     },
