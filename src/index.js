@@ -8,7 +8,7 @@ const swaggerDocs = require ('./swagger.json')
 const app = express()
 
 app.use((req, res, next) => {
-    res.header("Acess-Control-Allow-Origin", "")
+    res.header("Acess-Control-Allow-Origin", "*")
     res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE')
     app.use(cors())
     next()
